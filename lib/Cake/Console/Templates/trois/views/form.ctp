@@ -18,7 +18,7 @@
  */
 ?>
 <div class="<?php echo $pluralVar; ?> form">
-<?php echo "<?php echo \$this->Form->create('{$modelClass}'); ?>\n"; ?>
+<?php echo "<?php\necho \$this->Form->create('{$modelClass}',array(\n\t'class' => 'form-horizontal',\n\t'inputDefaults' => array(\n\t\t'format' => array('before', 'label', 'between', 'input', 'error', 'after'),\n\t\t'div' => array('class' => 'control-group'),\n\t\t'label' => array('class' => 'control-label'),\n\t\t'between' => '<div class=\"controls\">',\n\t\t'after' => '</div>',\n\t\t'error' => array('attributes' => array('wrap' => 'span', 'class' => 'help-inline'))\n)));\n?>\n"; ?>
 	<fieldset>
 		<legend><?php printf("<?php echo __('%s %s'); ?>", Inflector::humanize($action), $singularHumanName); ?></legend>
 <?php
