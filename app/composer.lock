@@ -1,0 +1,225 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "8304b032d85e1776dfa97a2c263cea31",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94",
+                "reference": "9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94",
+                "shasum": ""
+            },
+            "replace": {
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "agl",
+                "annotatecms",
+                "cakephp",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2014-02-12 21:21:55"
+        },
+        {
+            "name": "mjohnson/transit",
+            "version": "1.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/milesj/transit.git",
+                "reference": "b98ecdf7b94239828544e18e5ed83ff5da4038e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/milesj/transit/zipball/b98ecdf7b94239828544e18e5ed83ff5da4038e2",
+                "reference": "b98ecdf7b94239828544e18e5ed83ff5da4038e2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-fileinfo": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "~2.2",
+                "ext-exif": "*"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "~2.2",
+                "ext-exif": "Extract exif data from images",
+                "ext-gd": "Enable the GD library for image transforming"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Transit": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miles Johnson",
+                    "homepage": "http://milesj.me"
+                }
+            ],
+            "description": "A file uploader with support for validation, image transformation and remote transportation.",
+            "homepage": "http://milesj.me/code/php/transit",
+            "keywords": [
+                "application",
+                "archive",
+                "audio",
+                "exif",
+                "file",
+                "glacier",
+                "image",
+                "importer",
+                "s3",
+                "text",
+                "transformer",
+                "transit",
+                "transporter",
+                "uploader",
+                "validator",
+                "video"
+            ],
+            "time": "2013-12-05 04:34:42"
+        },
+        {
+            "name": "mjohnson/uploader",
+            "version": "4.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/milesj/uploader.git",
+                "reference": "360ad48386d8ae7a115cc622c267608992051623"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/milesj/uploader/zipball/360ad48386d8ae7a115cc622c267608992051623",
+                "reference": "360ad48386d8ae7a115cc622c267608992051623",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "ext-curl": "*",
+                "ext-fileinfo": "*",
+                "ext-mbstring": "*",
+                "mjohnson/transit": "~1.4",
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "~2.2",
+                "ext-exif": "Extract exif data from images",
+                "ext-gd": "Enable the GD library for image transforming"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miles Johnson",
+                    "homepage": "http://milesj.me"
+                }
+            ],
+            "description": "File uploader and validation plugin for CakePHP.",
+            "homepage": "http://milesj.me/code/cakephp/uploader",
+            "keywords": [
+                "attachment",
+                "cakephp",
+                "file",
+                "plugin",
+                "uploader",
+                "validation"
+            ],
+            "time": "2014-01-18 03:53:18"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

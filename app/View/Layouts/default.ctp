@@ -15,47 +15,36 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-$cakeDescription = __d('cake_dev', 'BOOTCAKE');
+
+$cakeDescription = __d('cake_dev', 'www');
 ?>
 <!DOCTYPE html>
 <html>
-        <head>
-                <?php echo $this->Html->charset(); ?>
-                <title>
-                        <?php echo $cakeDescription ?>:
-                        <?php echo $title_for_layout; ?>
-                </title>
-                <?php
-                echo $this->Html->meta('icon');
-
-                echo $this->Html->css(array('bootstrap', 'custom'));
-                echo $this->Html->script(array('jquery-1.10.2.min', 'bootstrap.min'));
-                
-                echo $this->fetch('meta');
-                echo $this->fetch('css');
-                echo $this->fetch('script');
-                ?>
-        </head>
-        <body>
-                <div id="container" class="container">
-                        <div id="header">
-                                <h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-                                <?php echo $this->element('menu')?>
-                        </div>
-                        <div id="content" >
-
-                                <?php echo $this->Session->flash(); ?>
-
-                                <?php echo $this->fetch('content'); ?>
-                        </div>
-                        <div id="footer">
-                                <?php
-                                echo $this->Html->link(
-                                        $this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')), 'http://www.cakephp.org/', array('target' => '_blank', 'escape' => false)
-                                );
-                                ?>
-                        </div>
-                </div>
-<?php echo $this->element('sql_dump'); ?>
-        </body>
+<head>
+	<?php echo $this->Html->charset(); ?>
+	<title>
+		<?php echo $cakeDescription ?>:
+		<?php echo $title_for_layout; ?>
+	</title>
+	<?php
+		echo $this->Html->meta('icon');
+		echo $this->Html->css(array('bootstrap.min', 'custom'));
+        echo $this->Html->script(array('jquery', 'bootstrap.min'));
+		echo $this->fetch('meta');
+		echo $this->fetch('css');
+		echo $this->fetch('script');
+	?>
+</head>
+<body>
+	<div id="container" class="container">
+		<div id="header">
+			<?php echo $this->element('menu')?>
+		</div>
+		<div id="content">
+			<?php echo $this->Session->flash(); ?>
+			<?php echo $this->fetch('content'); ?>
+		</div>
+		<?echo $this->element('footer')?>
+	</div>
+</body>
 </html>

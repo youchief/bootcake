@@ -31,7 +31,7 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-	Configure::write('debug', 2);
+	Configure::write('debug', 1);
 
 /**
  * Configure the Error handler used to handle errors for your application. By default
@@ -268,6 +268,14 @@
  * any date & time related errors.
  */
 	//date_default_timezone_set('UTC');
+
+/**
+ * `Config.timezone` is available in which you can set users' timezone string.
+ * If a method of CakeTime class is called with $timezone parameter as null and `Config.timezone` is set,
+ * then the value of `Config.timezone` will be used. This feature allows you to set users' timezone just
+ * once instead of passing it each time in function calls.
+ */
+	//Configure::write('Config.timezone', 'Europe/Paris')
 
 /**
  *
